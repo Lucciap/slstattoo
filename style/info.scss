@@ -1,0 +1,102 @@
+// info
+.info-title h2{
+
+    text-align: center;
+    font-family: var(--primary-font-family);
+    font-size: var(--secondary-font-size);
+    background: var(--secondary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0.5em;
+  
+}
+
+// accordion
+.accordion{
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+
+.accordion-body {
+    font-size: 0.8em;
+    font-family: poppins;
+    
+}
+
+.accordion-header .accordion-button {
+    font-size: 1.2rem;
+    font-family: steelfish; 
+    color: var(--text-color); 
+    background: var(--primary-gradient); 
+    border: 2px solid var(--decoration-color);
+    padding: 20px;
+     
+}
+
+
+.accordion .accordion-button:focus {
+    box-shadow: 0 0 5px rgb(225, 171, 78); 
+    border-color: var(--decoration-color); 
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    color: var(--text-color); 
+}
+
+.accordion-item {
+    border: none; 
+    margin-bottom: 10px; 
+    
+}
+
+.accordion .accordion-body {
+    font-size: 0.9em; 
+    font-family: poppins;
+    background:var(--primary-gradient); 
+    padding: 20px; 
+    border: 2px solid var(--decoration-color);
+    color: var(--text-color); 
+}
+
+
+// map
+
+.shop-title h2{
+
+    text-align: center;
+    font-family: steelfish;
+    font-size: var(--secondary-font-size);
+    background: var(--secondary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1em;
+  
+
+}
+
+
+iframe{ 
+    display: block;
+    margin: 0 auto;
+ 
+}
+
+.map-shop h3{
+    font-family: steelfish;
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin: 0.5em;
+}
+
+.map-shop h4{
+    font-family: steelfish;
+    text-align: center;
+    font-size: var(--paragraph-font-size);
+    color: var(--decoration-color);
+    margin: 0.5em;
+}

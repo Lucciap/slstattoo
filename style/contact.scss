@@ -1,0 +1,202 @@
+.contact h2{
+
+    text-align: center;
+    font-family: var(--primary-font-family);
+    font-size: var(--secondary-font-size);
+    background: var(--secondary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1em;
+  
+}
+
+
+.contact-description p {
+    color: var(--text-color);
+    font-size: var(--paragraph-font-size);
+    text-align: center;
+    margin: 0 200px 40px 200px;
+}
+
+.contact-form{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+.contact-form form{
+    width: 70%;
+    text-align: center;
+}
+
+label {
+    visibility: hidden;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    width: 100%; 
+    gap: 20px;
+    
+}
+
+.input-box .input-field{
+    width: 100%;
+
+}
+
+
+.field .item{
+ margin: 0 auto;
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #bf8924;
+    outline: none;
+    border-radius: 6px;
+    color: var(--text-color);
+    font-size: var(--paragraph-font-size);
+    
+   
+
+}
+
+.error-text{
+    display: none;
+    font-size: 1.5em;
+    color: red;
+    text-align: left;
+    margin: 5px 20px 10px;
+    
+}
+
+form .textarea-field .item {
+    resize: none;
+    margin: 0.5em auto;
+}
+
+// img-button
+.button-container {
+    display: flex;
+    justify-content: flex-end; 
+    
+}
+
+.img-button {
+    padding: 10px 20px; 
+    background:transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    color: #fff;
+    font-family: var(--primary-font-family);
+    font-size: var(--paragraph-font-size);
+    cursor: pointer;
+}
+
+
+// submit button
+
+.button-submit{
+
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    width: 25%;
+    height: 50px;
+    padding: 10px 40px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font-family);
+    font-size:var(--paragraph-font-size) ;
+  background: var(--secondary-gradient);
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s; 
+
+}
+.button-submit:hover{
+
+    transform: translateY(10px);
+    
+}
+
+// checkbox 
+
+
+.form-check.form-switch{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #bf8924;
+    padding: 20px 60px 20px 60px;
+    margin: 1em auto;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+#flexSwitchCheckDefault{
+    margin-left: 5px;
+}
+
+
+
+// popup form
+
+.popup-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.popup-content {
+    background: var(--background-color);
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    color: var(--text-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.popup-content h3 {
+    margin: 0;
+    color: var(--decoration-color);
+    font-size: var(--secondary-font-size);
+    font-family: steelfish;
+}
+
+.popup-content p {
+    margin: 10px 0 20px;
+    font-size: var(--paragraph-font-size);
+    font-family: steelfish;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    background: #bf8924;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: steelfish;
+    transition: 0.8s;
+
+}
+
+.popup-content button:hover {
+    background: #f4a021;
+   
+}

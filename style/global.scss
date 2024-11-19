@@ -1,0 +1,66 @@
+:root {
+  /* variants colors */
+  --background-color: #262626;
+  --text-color: #f2f2f2;
+  --decoration-color: #bf8924;
+  --primary-gradient: linear-gradient(90deg, #0d0d0d 0%, #737373 100%);
+  --secondary-gradient: linear-gradient(
+    260deg,
+    #bf8924 0%,
+    #c29623 49.53%,
+    #594011 99.07%
+  );
+
+  /* variants fonts */
+  --primary-font-size: 10em;
+  --secondary-font-size: 4em;
+  --paragraph-font-size: 2em;
+  --menu-font-size: 2em;
+}
+
+
+
+
+
+  /*  fonts family */
+
+
+ @font-face {
+    font-family: steelfish;
+    src: url(/fonts/steelfish/steelfish\ rg.otf)
+    format('otf');;
+
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(/fonts/Poppins/Poppins-Regular.ttf) format('ttf');
+}
+
+
+// global
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height:cover;
+  background-color: var(--primary-gradient);
+  font-family: steelfish;
+}
+
+main{
+  background: var(--primary-gradient);
+  font-family: steelfish;
+  padding-bottom: 3em;
+}
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez-moi pour prendre rendez-vous ou poser vos questions.">
+    <meta name="robots" content="index, follow">
+    <title>Sophie LS Tattoo - Contact</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+<!-- header -->
+ <div class="nav">
+    <header class="menu">
+        <div class="logo">
+            <a href="/pages/home.html" aria-label="Sophie LS Tattoo - Accueil">
+            <img src="/logos/logoslst.svg" alt="logo Sophie LS Tattoo">
+        </div>
+          <!-- menu burger -->
+          <div class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="links">
+            <li><a href="/pages/home.html">Accueil</a></li>
+            <li><a href="/pages/about.html">À propos</a></li>
+            <li><a href="/pages/gallery.html">Galerie</a></li>
+            <li><a href="/pages/info.html">Infos</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+    </header>
+</div>
+<main>
+    <!-- form -->
+    <section class="contact-container">
+        <div class="contact">
+            <h2 id="contact-heading">Formulaire de contact</h2>
+        </div>
+        <div class="contact-description">
+            <p>Lors de la prise de contact, soyez précis dans votre message, en donnant les infos suivantes :
+                le motif, l’endroit (avec une photo si possible), la taille, premier tatouage ou non, et des photos de références si vous en avez.</p>
+        </div>
+        <div class="contact-form">
+            <form action="#" aria-labelledby="contact-heading">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <label for="name">Votre nom</label>
+                        <input type="text" placeholder="Votre nom" id="name" class="item" autocomplete="off" aria-required="true">
+                        <div class="error-text" id="name-error" aria-live="polite">Veuillez écrire votre nom.</div>
+                    </div>
+                    <div class="input-field field">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" placeholder="Adresse Email" id="email" class="item" autocomplete="off" aria-required="true">
+                        <div class="error-text" id="email-error" aria-live="polite">L'adresse email n'est pas valide.</div>
+                    </div>
+                    <div class="input-field field">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" placeholder="Téléphone" id="phone" class="item" autocomplete="off" aria-required="true">
+                        <div class="error-text" id="phone-error" aria-live="polite">Le numéro de téléphone n'est pas valide.</div>
+                    </div>
+                    <div class="input-field field">
+                        <label for="subject">Objet</label>
+                        <input type="text" placeholder="Objet" id="subject" class="item" autocomplete="off">
+                    </div>
+                </div>
+                <div class="textarea-field field">
+                    <label for="message">Votre message</label>
+                    <textarea name="mess" id="message" cols="30" rows="10" placeholder="Votre message" class="item" autocomplete="off" aria-required="true"></textarea>
+                    <div class="error-text" id="message-error" aria-live="polite">La zone "Votre message" est vide.</div>
+                </div>
+                <div class="button-container">
+                    <label for="file-upload" class="img-button">Insérer un fichier</label>
+                    <button class="img-button"  disabled>Insérer un fichier</button>
+                    <input type="file" id="file-upload" style="display: none;">
+                </div>
+                <div class="form-check form-switch">
+                    <label class="form-check-label" for="validation-informations">
+                        J'accepte que les informations que je fournis soient utilisées uniquement pour répondre à ma demande et planifier éventuellement un rendez-vous.
+                    </label>
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" aria-required="true">
+                    <p>
+                        J'accepte que les informations que je fournis soient utilisées uniquement pour répondre à ma demande et planifier éventuellement un rendez-vous.
+                    </p>
+                    <div class="error-text toggle-error" style="display: none; color: red; font-size: 1.5rem;" aria-live="polite">
+                        Veuillez valider les conditions du traitement de vos données.
+                    </div>
+                </div>
+                <button class="button-submit" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Popup -->
+<div id="popup" class="popup-overlay" role="dialog" aria-labelledby="popup-heading" aria-hidden="true">
+    <div class="popup-content">
+        <h3 id="popup-heading">Merci !</h3>
+        <p>Votre formulaire a bien été envoyé.<br>Je vous recontacterai au plus vite.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+
+    <!-- footer -->
+    <footer>
+        <ul class="social-icon">
+            <li>
+              <a href="https://www.facebook.com/share/hzhQdZzzAzBViM3K/" target="_blank" aria-label="page Facebook Sophie LS Tattoo">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg==" target="_blank" aria-label="page Instagram Sophie LS Tattoo">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@sophie_laschnek?_t=8qxDZNoHVi5&_r=1" target="_blank" aria-label="page Titktok Sophie LS Tattoo">
+                <ion-icon name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+          </ul>
+      <ul class="menu-footer">
+        <li><a href="/pages/home.html">Accueil</a></li>
+        <li><a href="/pages/about.html">À propos</a></li>
+        <li><a href="/pages/gallery.html">Galerie</a></li>
+        <li><a href="/pages/info.html">Infos</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+      </ul>
+      <p >©2024 Sophie LS Tattoo - Tous droits réservés.</p>
+      </footer>
+      <script src="/js/index.js"></script>
+      <script src="/js/form.js">
+      </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+<script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
+</body>
+</html>

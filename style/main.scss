@@ -1,0 +1,16 @@
+@import "global.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "about.scss";
+@import "gallery.scss";
+@import "info.scss";
+@import "contact.scss";
+@import "responsive.scss";
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explorez la galerie de tatouages : designs uniques, inspiration pour votre prochain tatouage. Découvrez mon style artistique."
+    />
+    <meta name="robots" content="index, follow" />
+    <title>Sophie LS Tattoo - Galerie</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="nav">
+      <header class="menu">
+        <div class="logo">
+          <a
+            href="/pages/home.html"
+            aria-label="Sophie LS Tattoo - Accueil"
+          ></a>
+          <img src="/logos/logoslst.svg" alt="logo Sophie LS Tattoo" />
+        </div>
+        <!-- menu burger -->
+        <div class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="links">
+          <li><a href="/pages/home.html">Accueil</a></li>
+          <li><a href="/pages/about.html">À propos</a></li>
+          <li><a href="/pages/gallery.html">Galerie</a></li>
+          <li><a href="/pages/info.html">Infos</a></li>
+          <li><a href="/pages/contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+    <!-- gallery content -->
+    <main>
+      <div class="gallery-title">
+        <h2>Galerie</h2>
+      </div>
+      <div class="gallery">
+        <img src="/img/1.jpeg" alt="tatouage scarabé" data-popup="1" />
+        <img src="/img/2.jpeg" alt="tatouage statue romaine" data-popup="2" />
+        <img src="/img/3.jpeg" alt="tatouage papillon de nuit" data-popup="3" />
+        <img src="/img/4.jpeg" alt="ttatouage Famille Adams" data-popup="4" />
+        <img
+          src="/img/5.jpeg"
+          alt="tatouage couteau et visage"
+          data-popup="5"
+        />
+        <img src="/img/6.jpeg" alt="tatouage Mercredi Adams" data-popup="6" />
+        <img
+          src="/img/7.jpeg"
+          alt="Tatouage scarabé et visage"
+          data-popup="7"
+        />
+        <img src="/img/8.jpeg" alt="tatouage crane" data-popup="8" />
+        <img src="/img/9.jpeg" alt="tatouage Maléfique Disney" data-popup="9" />
+        <img
+          src="/img/10.jpeg"
+          alt="tatouage bouteille de parfum"
+          data-popup="10"
+        />
+        <img src="/img/11.jpeg" alt="tatouage araignée" data-popup="11" />
+        <img
+          src="/img/12.jpg"
+          alt="tatouage fleur dos complet"
+          data-popup="12"
+        />
+        <img
+          src="/img/13.jpg"
+          alt="tatouage scarabé et crane"
+          data-popup="13"
+        />
+        <img src="/img/14.jpg" alt="tatouage à l'oreille" data-popup="14" />
+        <img
+          src="/img/15.jpg"
+          alt="tatouage couteau et visage"
+          data-popup="15"
+        />
+        <img
+          src="/img/16.jpg"
+          alt="tatouage papillon de nuit et épingles"
+          data-popup="16"
+        />
+        <img
+          src="/img/17.jpg"
+          alt="tatouage gravure ancienne"
+          data-popup="17"
+        />
+        <img src="/img/18.jpg" alt="tatouage visage et fleur" data-popup="18" />
+        <img src="/img/carousel4.jpeg" alt="tatouage E.T" data-popup="19" />
+        <img
+          src="/img/carousel2.jpeg"
+          alt="tatouage gravure tempete"
+          data-popup="20"
+        />
+        <img
+          src="/img/carousel3.jpeg"
+          alt="tatuage dos femme"
+          data-popup="21"
+        />
+      </div>
+      <!-- Popup container -->
+      <div id="popup" class="popup">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img id="popup-image" class="popup-content" />
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+      </div>
+      <!-- follow part -->
+      <section class="follow">
+        <div class="follow-logo">
+          <a
+            href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+            target="_blank"
+          >
+            <img src="/logos/Instagram_icon.png.webp" alt="logo instagram"
+          /></a>
+        </div>
+        <div class="follow-title">
+          <a
+            href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+            target="_blank"
+          >
+            <h3>En voir plus sur Instagram</h3></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <ul class="social-icon">
+        <li>
+          <a
+            href="https://www.facebook.com/share/hzhQdZzzAzBViM3K/"
+            target="_blank"
+            aria-label="page Facebook Sophie LS Tattoo">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/sophie_la_schnek?igsh=MXUyN2hudXdkZ2Nwdg=="
+            target="_blank"
+            aria-label="page Instagram Sophie LS Tattoo">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@sophie_laschnek?_t=8qxDZNoHVi5&_r=1"
+            target="_blank"
+            aria-label="page Titktok Sophie LS Tattoo">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu-footer">
+      <li><a href="/pages/home.html">Accueil</a></li>
+      <li><a href="/pages/about.html">À propos</a></li>
+      <li><a href="/pages/gallery.html">Galerie</a></li>
+      <li><a href="/pages/info.html">Infos</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+    </ul>
+      <p>©2024 Sophie LS Tattoo - Tous droits réservés.</p>
+    </footer>
+    <script src="/js/index.js"></script>
+    <script src="/js/gallery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
